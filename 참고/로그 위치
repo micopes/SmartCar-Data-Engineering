@@ -1,0 +1,8 @@
+- Hadoop 에코 시스템 서버들의 로그 위치
+> `/var/log/디렉토리(cloudera, Hadoop, Oozie 등)`
+- Redis 서버 로그 위치
+> `/var/log/redis_6379.log
+- Storm 서버 로그 위치
+> `/home/pilot-pjt/storm/logs/
+- Zeppelin 서버 로그 위치
+> `/home/pilot-pjt/zeppelin-0.8.2-bin-all/logs
