@@ -1,4 +1,5 @@
 # Apache Flume
+[공식 문서 : https://flume.apache.org/FlumeUserGuide.html]
 
 ### Source
 > file, DB, API, Socket과 같은 것들을 발생 주기, format 등을 고려하여 이벤트를 수집
