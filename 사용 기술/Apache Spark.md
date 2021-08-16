@@ -1,6 +1,6 @@
 # Spark
 
-- In-memory에서 데이터 처리. Hive를 사용하면 Disk, Network I/O 시 Latency 발생하는데 이런 Latency를 줄여줄 수 있다.
+- **In-memory**에서 데이터 처리. Hive를 사용하면 Disk, Network I/O 시 Latency 발생하는데 이런 Latency를 줄여줄 수 있다.
 
 ## 구조
 
