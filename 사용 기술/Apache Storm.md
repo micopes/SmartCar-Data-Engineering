@@ -20,3 +20,10 @@
 > Spark와 유사한 역할
 >
 > Storm은 **Realtime**, but Spark **Micro-Batch**
+
+## 예시
+![image](https://user-images.githubusercontent.com/43158502/131253013-6c5b1b6e-f813-4cd6-8639-e67f2a776e35.png)
+
+## 활용 방식
+![image](https://user-images.githubusercontent.com/43158502/131253023-0d42dc0c-bc05-46e1-b289-28606ed173ac.png)
+
