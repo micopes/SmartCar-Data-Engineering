@@ -26,6 +26,8 @@
 
 #### MapReduce
 > 분산 저장된 data들을 분산 처리
+- Map : 어떻게 효율적으로 일을 나눠서 실행
+- Reduce : 여러 컴퓨터가 나눠서 실행한 결과를 하나로 모음
 
 #### JobTracker
 > 여러 MapReduce, Job들을 관리
