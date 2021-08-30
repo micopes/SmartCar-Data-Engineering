@@ -1,6 +1,6 @@
 # Apache Kafka
 - **비동기**방식 처리(queue, topic 등을 활용하여 버퍼 역할)
-- 대량의 Cluster로 buffer 역할, transaction 등의 처리. Flume과 함께 사용할 시 **안정성**을 높일 수 있다.
+- 대량의 Cluster로 buffer 역할, **ransaction** 등의 처리. Flume과 함께 사용할 시 **안정성**을 높일 수 있다.
 
 ### Broker
 > 서비스 instance
