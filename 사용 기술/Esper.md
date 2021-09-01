@@ -10,3 +10,6 @@
 
 ## 활용 방안
 - Storm 의 Bolt 내에 Input Adapter > Esper Engine > Output Adapter를 통해 결과 
+
+#### 주의사항
+- GPL License이므로 상업적 활용에 유의
