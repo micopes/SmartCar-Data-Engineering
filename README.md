@@ -10,3 +10,6 @@
 - 차량의 다양한 장치로부터 발생하는 로그 파일을 수집하여 기능별 상태 점검
 - 운전자의 운행 정보가 담긴 로그를 실시간으로 수집하여 주행 패턴 분석
 
+### 발생 이슈(Issue)
+
+- [Issue](https://github.com/micopes/SmartCar-Data-Engineering/issues)
