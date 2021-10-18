@@ -14,7 +14,6 @@
 - CDH 설치 (Cloudera에서 제공하는 Hadoop Ecosystem)
 - 설치 및 환경 구성(Flume, Kafka, Spark 등)
 
-
 #### [사용 기술](https://github.com/micopes/SmartCar-Data-Engineering/tree/main/%EC%82%AC%EC%9A%A9%20%EA%B8%B0%EC%88%A0)
 #### [진행 과정](https://github.com/micopes/SmartCar-Data-Engineering/tree/main/%EC%A7%84%ED%96%89%20%EB%82%B4%EC%9A%A9)
 #### [발생 이슈](https://github.com/micopes/SmartCar-Data-Engineering/issues)
