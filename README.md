@@ -14,6 +14,11 @@
 - CDH 설치 (Cloudera에서 제공하는 Hadoop Ecosystem)
 - 설치 및 환경 구성(Flume, Kafka, Spark 등)
 
+
+#### [사용 기술](https://github.com/micopes/SmartCar-Data-Engineering/tree/main/%EC%82%AC%EC%9A%A9%20%EA%B8%B0%EC%88%A0)
+#### [진행 과정](https://github.com/micopes/SmartCar-Data-Engineering/tree/main/%EC%A7%84%ED%96%89%20%EB%82%B4%EC%9A%A9)
+#### [발생 이슈](https://github.com/micopes/SmartCar-Data-Engineering/issues)
+
 ### 최종 구성
 ![image](https://user-images.githubusercontent.com/43158502/137731771-5fbe03b3-6305-4c36-b19f-09e11d51efca.png)
 
@@ -84,8 +89,7 @@
 - **Python**을 **Hive** Data Warehouse에 **연결**하여 분석 및 응용
 - Spark를 이용하여 분석 및 응용(Hive 구성 > Spark On YARN 서비스?)
 
-### [발생 이슈](https://github.com/micopes/SmartCar-Data-Engineering/issues)
-
-[참고 ] [실무로 배우는 빅데이터 기술 2nd](https://github.com/wikibook/bigdata2nd)
+##### [참고](https://github.com/micopes/SmartCar-Data-Engineering/tree/main/%EC%B0%B8%EA%B3%A0)
+> [참고 자료] [실무로 배우는 빅데이터 기술 2nd](https://github.com/wikibook/bigdata2nd)
 
 
