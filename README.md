@@ -21,8 +21,6 @@
 ## 수집
 - 데이터 생성을 위한 로그 시뮬레이터 가동
 
-![image](https://user-images.githubusercontent.com/43158502/137732308-e15624da-8f62-4f04-a072-74f5bac5ca19.png)
-
 - Flume
 > Source -> Channel -> Sink의 구조를 가지며, 데이터를 수집하기 위한 기능을 담당
 
@@ -36,25 +34,58 @@
 
 - Esper 
 > 실시간 스트리밍 데이터의 복잡한 이벤트 처리가 필요할 때 사용하는 룰 엔진
-> 
-> 이 프로젝트에서는 가속 데이터를 Redis에 담는다. 배치성으로 처리하기 전에 실시간으로 가속 탐지된 데이터를 처리하기 위해 사용
 
 ## 적재
 - 발생되는 데이터를 위의 수집과정을 거쳐 저장(적재)
 
+- 배치성 수집 - 적재
+![image](https://user-images.githubusercontent.com/43158502/137734145-941ca6b9-e0f9-471f-b68a-ec56d5efb4bb.png)
+- 실시간 수집 - 적재
+![image](https://user-images.githubusercontent.com/43158502/137732308-e15624da-8f62-4f04-a072-74f5bac5ca19.png)
+
 - HDFS
 > 파일을 블록 단위로 나누어서 각 클러스터에 분산 저장
 
-- 
+- Zookeeper : 분산 코디네이터
+> 분산 환경에서 작동되는 작업들을 감시, 감독(Supervisor)
 
-## 처리/탐색
+- HBase
+  - Hadoop 기반 Colume 지향 NoSQL
+  - Schema 변경이 자유롭다.
+  - Region이라는 분산 서버로 샤딩(같은 테이블 스키마를 가진 데이터를 다수의 데이터베이스에 분산하여 저장하는 방법)과 복제 지원 -> 성능/안정성 향상
 
-## 분석/응용
+- Redis
+  - 분산 Cache
+  - Key-Value 구조
+  - In-memory Data grid Software
+  - 실시간성 데이터 중 일부만 HBase에 저장하기도 전에 Redis에 저장할 필요 있어서 사용(가속 데이터)
 
+## 탐색
 
+- Hive
+  - 기존 방식) 적재된 데이터를 탐색/분석하기 위해 Map-Reduce를 주로 사용(복잡도 커짐, Java 이용 필요)
+  - Hive를 이용(SQL on Hadoop) Map-Reduce로 변환 및 실행 가능
+    - Query Engine : 사용자가 입력한 Hive Query를 분석하여 실행 계획을 수립, Hive Query를 Map-Reduce Code로 변환 및 실행
+
+- Spark
+> In-memory 방식을 통해 Map-Reduce보다 데이터를 더욱 효율적으로 처리(적은 데이터의 경우 MapReduce나 Impala가 Hive보다 유용)
+- Oozie 
+> Workflow 구성 가능
+- Hue 
+> *Web UI*를 이용하여 HDFS 및 Query를 간편하게 이용 가능
+
+## 분석
+- Impala
+> Hive 쿼리보다도 더 빠른 실시간 분석을 위한 쿼리엔진. 대용량 배치처리보다는 ad-hoc 쿼리를 통한 빠른 질의결과를 요구
+- Zeppelin
+> Zeppelin : R과 HDFS를 서로 연결하여 원활한 데이터 분석 작업을 진행하기위한 툴. Spark를 기반으로 한다.
+
+## 추가 작업
+- Python을 Hive Data Warehouse에 연결하여 분석 및 응용
+- Spark를 이용하여 분석 및 응용(Hive 구성 > Spark On YARN 서비스?)
 
 ### [발생 이슈](https://github.com/micopes/SmartCar-Data-Engineering/issues)
 
-[참고] [실무로 배우는 빅데이터 기술 2nd](https://github.com/wikibook/bigdata2nd)
+[참고 ] [실무로 배우는 빅데이터 기술 2nd](https://github.com/wikibook/bigdata2nd)
 
 
