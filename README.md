@@ -81,7 +81,7 @@
 > Zeppelin : R과 HDFS를 서로 연결하여 원활한 데이터 분석 작업을 진행하기위한 툴. Spark를 기반으로 한다.
 
 ## 추가 작업
-- Python을 Hive Data Warehouse에 연결하여 분석 및 응용
+- **Python**을 **Hive** Data Warehouse에 **연결**하여 분석 및 응용
 - Spark를 이용하여 분석 및 응용(Hive 구성 > Spark On YARN 서비스?)
 
 ### [발생 이슈](https://github.com/micopes/SmartCar-Data-Engineering/issues)
