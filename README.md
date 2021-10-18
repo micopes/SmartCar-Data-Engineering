@@ -40,12 +40,20 @@
 > 실시간 스트리밍 데이터의 복잡한 이벤트 처리가 필요할 때 사용하는 룰 엔진
 
 ## 적재
-- 발생되는 데이터를 위의 수집과정을 거쳐 저장(적재)
 
 - 배치성 수집 - 적재
+
 ![image](https://user-images.githubusercontent.com/43158502/137734145-941ca6b9-e0f9-471f-b68a-ec56d5efb4bb.png)
+
+<hr>
+
 - 실시간 수집 - 적재
+
 ![image](https://user-images.githubusercontent.com/43158502/137732308-e15624da-8f62-4f04-a072-74f5bac5ca19.png)
+
+> 발생되는 데이터를 위의 수집과정을 거쳐 저장(적재)
+
+
 
 - HDFS
 > 파일을 블록 단위로 나누어서 각 클러스터에 분산 저장
