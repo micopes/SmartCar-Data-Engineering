@@ -71,6 +71,7 @@
   - 기존 방식) 적재된 데이터를 탐색/분석하기 위해 Map-Reduce를 주로 사용(복잡도 커짐, Java 이용 필요)
   - Hive를 이용(SQL on Hadoop) Map-Reduce로 변환 및 실행 가능
     - Query Engine : 사용자가 입력한 Hive Query를 분석하여 실행 계획을 수립, Hive Query를 Map-Reduce Code로 변환 및 실행
+  - Interactive(대화형)한 방식에는 적합하지 않다. 추후 Impala 사용
 
 - Spark
 > In-memory 방식을 통해 Map-Reduce보다 데이터를 더욱 효율적으로 처리(적은 데이터의 경우 MapReduce나 Impala가 Hive보다 유용)
@@ -79,11 +80,35 @@
 - Hue 
 > *Web UI*를 이용하여 HDFS 및 Query를 간편하게 이용 가능
 
+##### 기존의 Hive Table 이용 추가 주제영역 테이블 생성
+- 스마트카 상태 모니터링 정보(`managed_smartcar_status_info`
+  - `smartcar_master_over18`, `smartcar_status_info` 이용
+- 스마트카 운전자 운행기록 정보(`managed_smartcar_drive_info`)
+  - `smartcar_master_over18`, `smartcar_drive_info_2` 이용
+- 이상 운전 패턴 스마트카 정보(`managed_smartcar_symptom_info`)
+  - `managed_smartcar_drive_info` 이용
+- 긴급 점검이 필요한 스마트카 정보(`managed_smartcar_emergency_check_info`)
+  - `managed_smartcar_status_info` 이용
+- 운전자의 차량 용품 구매 이력정보(`managed_smartcar_item_buylist_info`)
+  - `smartcar_master_over18`, `smartcar_item_buylist` 이용
+
+##### 추가 주제 영역 테이블 확인
+
+![image](https://user-images.githubusercontent.com/43158502/137740820-cc56337f-d41b-48da-a600-1262e8e8ce9e.png)
+
+- 제대로 생성된 것을 확인할 수 있다.
+
+<hr>
+
+
 ## 분석
 - Impala
-> Hive 쿼리보다도 더 빠른 실시간 분석을 위한 쿼리엔진. 대용량 배치처리보다는 ad-hoc 쿼리를 통한 빠른 질의결과를 요구
+> Hive 쿼리보다 빠른 실시간 분석(대화형 쿼리)을 위한 쿼리엔진. 대용량 배치처리보다는 ad-hoc 쿼리를 통한 빠른 질의결과를 요구
 - Zeppelin
-> Zeppelin : R과 HDFS를 서로 연결하여 원활한 데이터 분석 작업을 진행하기위한 툴. Spark를 기반으로 한다.
+> R과 HDFS를 서로 연결하여 원활한 데이터 분석 작업을 진행하기위한 툴. Spark를 기반으로 한다.
+- Sqoop
+> HDFS에 저장된 분석 결과를 외부에 있는 DB(Oracle, MySQL, PostgreSQL 등)에 전달
+
 
 ## 추가 작업
 - **Python**을 **Hive** Data Warehouse에 **연결**하여 분석 및 응용
