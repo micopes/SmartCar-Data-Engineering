@@ -88,7 +88,7 @@
 > *Web UI*를 이용하여 HDFS 및 Query를 간편하게 이용 가능
 
 ##### 기존의 Hive Table 이용 추가 주제영역 테이블 생성
-- 스마트카 상태 모니터링 정보(`managed_smartcar_status_info`
+- 스마트카 상태 모니터링 정보(`managed_smartcar_status_info`)
   - `smartcar_master_over18`, `smartcar_status_info` 이용
 - 스마트카 운전자 운행기록 정보(`managed_smartcar_drive_info`)
   - `smartcar_master_over18`, `smartcar_drive_info_2` 이용
@@ -118,8 +118,8 @@
 
 
 ## 추가 작업
-- **Python**을 **Hive** Data Warehouse에 **연결**하여 분석 및 응용
-- Spark를 이용하여 분석 및 응용(Hive 구성 > Spark On YARN 서비스?)
+- **Python**을 **Hive Data Warehouse**에 **연결**하여 분석 및 응용
+- **SparkML**를 이용하여 분석 및 응용
 
 ##### [참고](https://github.com/micopes/SmartCar-Data-Engineering/tree/main/%EC%B0%B8%EA%B3%A0)
 > [참고 자료] [실무로 배우는 빅데이터 기술 2nd](https://github.com/wikibook/bigdata2nd)
