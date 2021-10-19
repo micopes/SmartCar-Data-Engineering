@@ -121,7 +121,6 @@
 - **Python**을 **Hive Data Warehouse**에 **연결**하여 분석 및 응용
 - **SparkML**를 이용하여 분석 및 응용
 
-##### [참고](https://github.com/micopes/SmartCar-Data-Engineering/tree/main/%EC%B0%B8%EA%B3%A0)
-> [참고 자료] [실무로 배우는 빅데이터 기술 2nd](https://github.com/wikibook/bigdata2nd)
+> [참고 자료] [실무로 배우는 빅데이터 기술](https://github.com/wikibook/bigdata2nd)
 
 
