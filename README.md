@@ -19,7 +19,7 @@
 #### [발생 이슈](https://github.com/micopes/SmartCar-Data-Engineering/issues)
 
 ### 최종 구성
-![image](https://user-images.githubusercontent.com/43158502/137731771-5fbe03b3-6305-4c36-b19f-09e11d51efca.png)
+![전체 구성](https://user-images.githubusercontent.com/43158502/138586361-279e4523-95f1-4c01-b62c-5ab12d6c8135.jpg)
 
 
 ## 수집
@@ -43,13 +43,13 @@
 
 #### 배치성 수집 - 적재
 
-![image](https://user-images.githubusercontent.com/43158502/137734145-941ca6b9-e0f9-471f-b68a-ec56d5efb4bb.png)
+![수집-적재(배치)](https://user-images.githubusercontent.com/43158502/138586366-c8dc5c7e-0ac4-4991-900a-bfb28b125261.jpg)
 
 <hr>
 
 #### 실시간 수집 - 적재
 
-![image](https://user-images.githubusercontent.com/43158502/137732308-e15624da-8f62-4f04-a072-74f5bac5ca19.png)
+![수집-적재(실시간)](https://user-images.githubusercontent.com/43158502/138586368-52281d41-2d49-4a59-baf9-54b0264c10ef.jpg)
 
 -  실시간 수집의 경우 **Flume**에서 수집이후 바로 적재를 진행하게 되면, `Fault Tolerance`를 보장하지 못한다. 적재 시 HBase와 같은 곳에 오류가 발생하면, 실시간으로 수집되고 있는 데이터들이 손실될 수 있다.    
   - 이런 점을 해결하기 위해서 중간에 **Kafka**의 높은 처리량, 신뢰성, 즉각적인 피드백을 통해 수집되고 있는 데이터들이 손실되지 않고, 즉각적으로 장애에 대응할 수 있도록 구성하였다.
