@@ -82,7 +82,7 @@
   - Interactive(대화형)한 방식에는 적합하지 않다. 추후 Impala 사용
 
 - Spark
-> In-memory 방식을 통해 Map-Reduce보다 데이터를 더욱 효율적으로 처리(적은 데이터의 경우 MapReduce나 Impala가 Hive보다 유용)
+> In-memory 방식을 통해 Map-Reduce보다 데이터를 더욱 효율적으로 처리(적은 데이터의 경우 Spark나 Impala가 Hive보다 유용)
 - Oozie 
 > Workflow 구성 가능
 - Hue 
